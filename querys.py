@@ -13,9 +13,9 @@ class Melipper:
         }
         data = {
         'grant_type': 'refresh_token',
-        'client_id': '7500806246647047',
-        'client_secret': 'Ww0c5SdsmCU9ns6Ca0WWl9GKtN2u4A6P',
-        'refresh_token': 'TG-654e3f4d5c7e9d00016c2ef9-276188176',
+        'client_id': '',
+        'client_secret': '',
+        'refresh_token': '',
         }
         response = requests.post(endpoint, headers=headers, data=data)
         data = response.json()

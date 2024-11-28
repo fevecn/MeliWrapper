@@ -1,5 +1,3 @@
-#http://localhost:3000/?code=TG-65023344ba6caa00010bf733-276188176&state=
-#APP_USR-7500806246647047-091318-ba30742b80087d70df496477e02160d9-276188176
 import requests
 
 def api():
@@ -10,9 +8,9 @@ def api():
     }
     data = {
         'grant_type': 'authorization_code',
-        'client_id': '7500806246647047',
-        'client_secret': 'Ww0c5SdsmCU9ns6Ca0WWl9GKtN2u4A6P',
-        'code': 'TG-65023a72c0fb010001ee4f69-276188176',
+        'client_id': '',
+        'client_secret': '',
+        'code': '',
         'redirect_uri': 'http://localhost:3000'
     }
 

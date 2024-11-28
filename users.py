@@ -19,6 +19,6 @@ class User:
         response = requests.post(endpoint, headers=headers, json=data)
         return response.json()
 
-oombe = User(ml_api_key="APP_USR-7500806246647047-101013-ed0cc64916cf9a81888a4995613053b4-276188176")
-user_data = oombe.create_user(site_id="MLB")
+mlwrapper = User(ml_api_key="")
+user_data = mlwrapper.create_user(site_id="MLB")
 print(user_data)

@@ -9,7 +9,7 @@ pd.set_option('display.max_columns', 50)
 # Mostra todo o conteúdo da célula
 pd.set_option('display.max_colwidth', None)  # Usando None em vez de -1, que está obsoleto
 # Corrigido o caminho do arquivo e a leitura das colunas
-df = pd.read_excel(r"C:\Users\felip\Desktop\dataset.xlsx")
+df = pd.read_excel(r"dataset.xlsx")
 
 class Cadastro:
 
@@ -110,7 +110,7 @@ class Cadastro:
         return response.json()
 
 
-cadastro = Cadastro(ml_api_key="APP_USR-7500806246647047-111010-175e44348a057cf8d8e85b66458aee15-276188176")
+cadastro = Cadastro(ml_api_key="")
 
 df_filtered = df.dropna(subset=['Titulo'])
 
@@ -190,7 +190,7 @@ print(atributos_publi)
 
 #   Lista de caminhos de arquivos que você deseja enviar
 # Diretório base onde os arquivos estão localizados
-diretorio_base = 'D:\\Users\\felip\\Pictures\\Hypnose\\Halloween\\JPEG'
+diretorio_base = 'Halloween\\JPEG'
 
 pic_id = cadastro.imagens(diretorio_base)
 
@@ -202,7 +202,7 @@ df['pic_id'] = None
 df.at[0, 'pic_id'] = pic_id
 
 # Mandar pro Excel
-df.to_excel(r'C:\Users\felip\Desktop\dataset2.xlsx', index=False)
+df.to_excel(r'dataset2.xlsx', index=False)
 # Publicação
 print(df)
 
@@ -231,4 +231,4 @@ if len(df2) < len(atributos_all):
 df2['Intersection_Of_All_Columns'] = atributos_all + [None] * (len(df2) - len(atributos_all))
 
 
-# df2.to_excel(r'C:\Users\felip\Desktop\dataset3.xlsx', index=False)
+# df2.to_excel(r'dataset3.xlsx', index=False)
