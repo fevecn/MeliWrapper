@@ -1,2 +1,2 @@
-**# MeliWrapper
+# MeliWrapper
 Mercado Libre API Wrapper**
