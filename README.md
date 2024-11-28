@@ -1,2 +1,4 @@
 # MeliWrapper
-Mercado Libre API Wrapper**
+## Mercado Libre API Wrapper
+
+Deprecated
